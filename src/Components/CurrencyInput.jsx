@@ -2,10 +2,12 @@ import React from 'react'
 
 
 const CurrencyInput=({currencyoptions,SelectedCurrency,onChangeCurrency,amount,onChangeAmount})=> {
-    return (
+            
+      return (
         <div>
             
       <input type='number' className='input' value={amount} onChange={onChangeAmount} min='0' /> 
+                
                 <select value={SelectedCurrency} onChange={onChangeCurrency}>
                       {
                          currencyoptions.map(option=>(
@@ -13,6 +15,8 @@ const CurrencyInput=({currencyoptions,SelectedCurrency,onChangeCurrency,amount,o
                                         
                       ))}
                 </select>
+
+                
         </div>
     )
 }

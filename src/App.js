@@ -75,7 +75,8 @@ function handleToAmountChange(e)
     SelectedCurrency={fromcurrency}
     onChangeCurrency={e=>setFromCurrency(e.target.value)}
     amount={fromamount}
-    onChangeAmount={handleFromAmountChange}/>
+    onChangeAmount={handleFromAmountChange}
+    />
     
     <div className='equals'>=</div>
     
@@ -84,7 +85,8 @@ function handleToAmountChange(e)
     SelectedCurrency={tocurrency}
     onChangeCurrency={e=>setTocurrency(e.target.value)}
     amount={toamount}
-    onChangeAmount={handleToAmountChange}/>
+    onChangeAmount={handleToAmountChange}
+    />
     </div>
   );
 }
